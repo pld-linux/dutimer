@@ -8,7 +8,7 @@ Source: 	%{name}-v%{version}-linux.tar.gz
 Group:		Networking
 Group(pl):	Sieciowe
 URL: 		http://dutimer.viii-lo.krakow.pl
-BuildRoot: 	/tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 Dial Up Timer shows modem connection time and cost.
