@@ -1,13 +1,13 @@
 Summary:	Dial Up Timer
 Summary(pl):	Dial Up Timer
 Name:		dutimer
-Version: 	0.4.1
-Release: 	3
-Copyright:	GPL
+Version:	0.4.1
+Release:	3
+License:	GPL
 Group:		Networking
 Group(pl):	Sieciowe
-Source: 	%{name}-v%{version}-linux.tar.gz
-URL: 		http://dutimer.viii-lo.krakow.pl
+Source0:	%{name}-v%{version}-linux.tar.gz
+URL:		http://dutimer.viii-lo.krakow.pl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
