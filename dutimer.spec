@@ -5,9 +5,12 @@ Version:	0.4.1
 Release:	3
 License:	GPL
 Group:		Networking
+Group(de):	Netzwerkwesen
+Group(es):	Red
 Group(pl):	Sieciowe
-Source0:	%{name}-v%{version}-linux.tar.gz
-URL:		http://dutimer.viii-lo.krakow.pl
+Group(pt_BR):	Rede
+Source0:	ftp://viii-lo.krakow.pl/pub/linux/dutimer/%{name}-v%{version}-linux.tar.gz
+URL:		http://dutimer.viii-lo.krakow.pl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
