@@ -26,7 +26,7 @@ Dial Up Timer wy¶wietla czas oraz koszt po³±czenia modemowego.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
 
-install -s dutimer $RPM_BUILD_ROOT%{_sbindir}/dutimer
+install dutimer $RPM_BUILD_ROOT%{_sbindir}/dutimer
 
 gzip -9nf doc/*
 
