@@ -27,8 +27,6 @@ install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install dutimer $RPM_BUILD_ROOT%{_sbindir}/dutimer
 
-gzip -9nf doc/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
