@@ -4,10 +4,11 @@ Name:        dutimer
 Version:     0.3.0
 Release:     1
 Copyright:   GPL
-Source:      ftp://viii-lo.krakow.pl/pub/linux/dutimer/%{name}-v%{version}-linux.tar.gz
+Source:      %{name}-v%{version}-linux.tar.gz
 Group:       Applications/Networking
+Group(pl):   Aplikacje/Sieciowe
 URL:         http://dutimer.viii-lo.krakow.pl
-BuildRoot:   /tmp/%{name}-%{version}-root
+BuildRoot:   /tmp/buildroot-%{name}-%{version}
 
 %description
 Dial Up Timer shows modem connection time and cost.
@@ -38,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Thu Sep 10 1998 Marek Obuchowicz <elephant@shadow.eu.org>
   [0.07-1]
-- first try RPM.
+- first try RPM
