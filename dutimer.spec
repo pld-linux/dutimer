@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Networking
 Source0:	ftp://viii-lo.krakow.pl/pub/linux/dutimer/%{name}-v%{version}-linux.tar.gz
+# Source0-md5:	77747b471458ab769cfe7a198b2ac26c
 URL:		http://dutimer.viii-lo.krakow.pl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
