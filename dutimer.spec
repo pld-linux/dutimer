@@ -2,11 +2,11 @@ Summary:	Dial Up Timer
 Summary(pl):	Dial Up Timer
 Name:		dutimer
 Version: 	0.4.1
-Release: 	2d
+Release: 	3
 Copyright:	GPL
-Source: 	%{name}-v%{version}-linux.tar.gz
 Group:		Networking
 Group(pl):	Sieciowe
+Source: 	%{name}-v%{version}-linux.tar.gz
 URL: 		http://dutimer.viii-lo.krakow.pl
 BuildRoot:	/tmp/%{name}-%{version}-root
 
@@ -24,11 +24,11 @@ make pl
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_sbindir}
+
 install -s dutimer $RPM_BUILD_ROOT%{_sbindir}/dutimer
 
-bzip2 -9 doc/*
+gzip -9nf doc/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -36,10 +36,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc doc/*
-
 %attr(755,root,root) %{_sbindir}/*
 
 %changelog
+* Wed Jun 23 1999 Micha³ Kuratczyk <kura@pld.org.pl>
+  [0.4.1-3]
+- gzipping documentation instead bzipping
+
 * Thu Feb 18 1999 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
   [0.4.1-2d]
 - added Group(pl),
