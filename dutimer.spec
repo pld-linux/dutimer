@@ -25,8 +25,8 @@ make pl
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/usr/sbin
-install -s dutimer $RPM_BUILD_ROOT/usr/sbin/dutimer
+install -d $RPM_BUILD_ROOT%{_sbindir}
+install -s dutimer $RPM_BUILD_ROOT%{_sbindir}/dutimer
 
 bzip2 -9 doc/*
 
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/*
 
-%attr(755,root,root) /usr/sbin/*
+%attr(755,root,root) %{_sbindir}/*
 
 %changelog
 * Thu Feb 18 1999 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
