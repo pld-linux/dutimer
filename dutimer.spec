@@ -20,7 +20,7 @@ Dial Up Timer wy¶wietla czas oraz koszt po³±czenia modemowego.
 %setup -q
 
 %build
-make pl
+%{__make} pl
 
 %install
 rm -rf $RPM_BUILD_ROOT
