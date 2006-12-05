@@ -1,0 +1,42 @@
+--- dutimer-0.4.1/Makefile.orig	2006-12-05 18:03:16.000000000 +0100
++++ dutimer-0.4.1/Makefile	2006-12-05 18:05:50.000000000 +0100
+@@ -7,19 +7,19 @@
+ 	cat doc/LANGS
+ 
+ pl: dutimerpl.cpp ppidof.h ppidof.c
+-	g++ -g -c ppidof.c
+-	g++ -g -c dutimerpl.cpp
+-	g++ dutimerpl.o ppidof.o -o dutimer
++	$(CC) -g -c ppidof.c
++	$(CXX) -g -c dutimerpl.cpp
++	$(CXX) dutimerpl.o ppidof.o -o dutimer
+ 
+ bpl: dutimerbpl.cpp ppidof.h ppidof.c
+-	g++ -g -c ppidof.c
+-	g++ -g -c dutimerbpl.cpp
+-	g++ dutimerbpl.o ppidof.o -o dutimer
++	$(CXX) -g -c ppidof.c
++	$(CXX) -g -c dutimerbpl.cpp
++	$(CXX) dutimerbpl.o ppidof.o -o dutimer
+ 
+ en: dutimeren.cpp ppidof.h ppidof.c
+-	g++ -g -c ppidof.c
+-	g++ -g -c dutimeren.cpp
+-	g++ dutimeren.o ppidof.o -o dutimer
++	$(CC) -g -c ppidof.c
++	$(CXX) -g -c dutimeren.cpp
++	$(CXX) dutimeren.o ppidof.o -o dutimer
+ 
+ install:
+ 	cp dutimer /usr/local/sbin
+--- dutimer-0.4.1/dutimerpl.cpp.orig	2006-12-05 18:07:36.000000000 +0100
++++ dutimed-0.4.1/dutimerpl.cpp	2006-12-05 18:07:48.000000000 +0100
+@@ -658,7 +658,7 @@
+ // ======================= G³ówna czê¶æ programu =====================
+ 
+ 
+-void main(int argc, char * argv[])
++int main(int argc, char * argv[])
+ {
+     cout << "\nDial Up Timer v0.4.1";
+     cout << "\n1998 PaGer";
