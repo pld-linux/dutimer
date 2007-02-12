@@ -1,5 +1,5 @@
 Summary:	Dial Up Timer
-Summary(pl.UTF-8):   Dial Up Timer
+Summary(pl.UTF-8):	Dial Up Timer
 Name:		dutimer
 Version:	0.4.1
 Release:	3
