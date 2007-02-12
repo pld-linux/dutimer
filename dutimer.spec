@@ -1,5 +1,5 @@
 Summary:	Dial Up Timer
-Summary(pl):	Dial Up Timer
+Summary(pl.UTF-8):   Dial Up Timer
 Name:		dutimer
 Version:	0.4.1
 Release:	3
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dial Up Timer shows modem connection time and cost.
 
-%description -l pl
-Dial Up Timer wy¶wietla czas oraz koszt po³±czenia modemowego.
+%description -l pl.UTF-8
+Dial Up Timer wyÅ›wietla czas oraz koszt poÅ‚Ä…czenia modemowego.
 
 %prep
 %setup -q
